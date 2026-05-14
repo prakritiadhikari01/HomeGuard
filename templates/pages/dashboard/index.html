@@ -1,0 +1,35 @@
+{% extends "base/app.html" %}
+
+{% block content %}
+
+<div class="space-y-8">
+
+    {% include 'components/cards/ai_brief_card.html' %}
+
+    <div class="grid grid-cols-3 gap-6">
+
+        <div class="col-span-2">
+            {% include 'components/surveillance/camera_grid.html' %}
+        </div>
+
+        <div>
+            {% include 'components/timeline/timeline.html' %}
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-4 gap-6">
+
+        {% include 'components/cards/device_card.html' with title='Smart Lock' subtitle='Main Entrance' status='Locked' icon='🔒' %}
+
+        {% include 'components/cards/device_card.html' with title='Lights' subtitle='Driveway' status='Auto • Motion' icon='💡' %}
+
+        {% include 'components/widgets/member_stack.html' %}
+
+        {% include 'components/cards/device_card.html' with title='Add Device' subtitle='Connect New Device' status='+' icon='+' %}
+
+    </div>
+
+</div>
+
+{% endblock %}

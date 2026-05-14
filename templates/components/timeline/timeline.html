@@ -1,0 +1,18 @@
+<div class="rounded-[28px] border border-white/5 bg-[#0f172a] p-6 h-full">
+
+    <div class="flex items-center justify-between mb-8">
+        <h3 class="text-2xl font-semibold">Activity Timeline</h3>
+        <a href="#" class="text-blue-400">Archive</a>
+    </div>
+
+    <div class="space-y-6">
+
+        {% include 'components/timeline/timeline_item.html' with color='bg-green-400' title='Alex entered Front Door' subtitle='Facial recognition • 99.2%' time='2m ago' %}
+
+        {% include 'components/timeline/timeline_item.html' with color='bg-yellow-400' title='Unknown vehicle in Driveway' subtitle='Plate captured • delivery' time='1h ago' %}
+
+        {% include 'components/timeline/timeline_item.html' with color='bg-red-400' title='Repeated unknown presence' subtitle='Backyard • 3 cycles' time='12h ago' %}
+
+    </div>
+
+</div>

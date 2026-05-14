@@ -1,0 +1,30 @@
+<div class="relative rounded-[28px] overflow-hidden border border-white/5 group h-[260px] bg-slate-900">
+
+    <img src="{{ image }}"
+         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+    <div class="absolute top-4 left-4 flex items-center gap-2 z-10">
+
+        <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-xs">
+            <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+            LIVE
+        </div>
+
+        <div class="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-xs">
+            CAM-01
+        </div>
+
+    </div>
+
+    <div class="absolute bottom-5 left-5 z-10">
+        <h3 class="text-2xl font-semibold">{{ title }}</h3>
+        <p class="text-sm text-slate-300 mt-1">08:34 AM</p>
+    </div>
+
+    <div class="absolute bottom-5 right-5 z-10 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-500/30 text-sm backdrop-blur-xl">
+        {{ badge }}
+    </div>
+
+</div>

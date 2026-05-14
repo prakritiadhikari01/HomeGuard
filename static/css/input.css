@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #020817;
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+.card {
+    @apply bg-[#071225] border border-[#13233a] rounded-2xl;
+}
+
+.sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-[#0f172a] transition;
+}
+
+.sidebar-item-active {
+    @apply bg-blue-500/10 text-blue-400;
+}

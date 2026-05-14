@@ -1,0 +1,26 @@
+<aside class="w-[260px] bg-[#060b16] border-r border-white/5 flex flex-col justify-between">
+
+    <div>
+
+        <div class="p-6 border-b border-white/5">
+            <h1 class="text-2xl font-bold">HOMEGUARD</h1>
+            <p class="text-sm text-slate-400 mt-1">v2.4 • Secure</p>
+        </div>
+
+        <nav class="p-4 space-y-2">
+
+            {% include 'components/navigation/sidebar_item.html' with title='Dashboard' active=True %}
+            {% include 'components/navigation/sidebar_item.html' with title='Live Surveillance' %}
+            {% include 'components/navigation/sidebar_item.html' with title='Activity Timeline' %}
+            {% include 'components/navigation/sidebar_item.html' with title='Members' %}
+            {% include 'components/navigation/sidebar_item.html' with title='Settings' %}
+
+        </nav>
+
+    </div>
+
+    <div class="p-4">
+        {% include 'components/widgets/system_status.html' %}
+    </div>
+
+</aside>

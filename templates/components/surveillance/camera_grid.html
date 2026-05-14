@@ -1,0 +1,28 @@
+<div>
+
+    <div class="flex items-center justify-between mb-5">
+
+        <div>
+            <h3 class="text-2xl font-semibold">Live Surveillance</h3>
+            <p class="text-slate-400 mt-1">4 cameras streaming • AI overlays active</p>
+        </div>
+
+        <a href="#" class="text-blue-400 hover:text-blue-300 transition">
+            View all
+        </a>
+
+    </div>
+
+    <div class="grid grid-cols-2 gap-5">
+
+        {% include 'components/cards/surveillance_card.html' with title='Front Door' badge='KNOWN PERSON • 99%' image='https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop' %}
+
+        {% include 'components/cards/surveillance_card.html' with title='Driveway' badge='VEHICLE • 92%' image='https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop' %}
+
+        {% include 'components/cards/surveillance_card.html' with title='Backyard' badge='CLEAR' image='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop' %}
+
+        {% include 'components/cards/surveillance_card.html' with title='Living Room' badge='CLEAR' image='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop' %}
+
+    </div>
+
+</div>

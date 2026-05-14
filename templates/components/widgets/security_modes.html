@@ -1,0 +1,83 @@
+<div class="bg-[#071427] border border-[#11213b] rounded-3xl p-6">
+
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h3 class="text-white text-xl font-semibold">
+                Security Mode
+            </h3>
+
+            <p class="text-gray-400 text-sm mt-1">
+                Adjust automation intensity & alert routing
+            </p>
+        </div>
+
+        <div class="text-right">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500">
+                Last Change
+            </p>
+
+            <p class="text-sm text-gray-400 mt-1">
+                2d ago
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4">
+
+        <!-- Normal -->
+        <button
+            class="bg-[#0d2544] border border-blue-500 rounded-2xl p-6 text-center relative transition hover:border-blue-400"
+        >
+            <div class="absolute top-3 right-3 w-2 h-2 rounded-full bg-blue-400"></div>
+
+            <div class="w-10 h-10 mx-auto rounded-full bg-blue-500/10 flex items-center justify-center mb-4">
+                🛡️
+            </div>
+
+            <h4 class="text-blue-400 font-medium">
+                Normal
+            </h4>
+        </button>
+
+        <!-- Away -->
+        <button
+            class="bg-[#09182c] border border-[#162742] rounded-2xl p-6 text-center transition hover:border-gray-500"
+        >
+            <div class="w-10 h-10 mx-auto rounded-full bg-gray-500/10 flex items-center justify-center mb-4">
+                ✈️
+            </div>
+
+            <h4 class="text-white font-medium">
+                Away
+            </h4>
+        </button>
+
+        <!-- High -->
+        <button
+            class="bg-[#09182c] border border-[#162742] rounded-2xl p-6 text-center transition hover:border-gray-500"
+        >
+            <div class="w-10 h-10 mx-auto rounded-full bg-gray-500/10 flex items-center justify-center mb-4">
+                🛡
+            </div>
+
+            <h4 class="text-white font-medium">
+                High
+            </h4>
+        </button>
+
+        <!-- SOS -->
+        <button
+            class="bg-[#09182c] border border-[#162742] rounded-2xl p-6 text-center transition hover:border-red-500 hover:bg-red-500/5"
+        >
+            <div class="w-10 h-10 mx-auto rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+                🚨
+            </div>
+
+            <h4 class="text-white font-medium">
+                SOS
+            </h4>
+        </button>
+
+    </div>
+
+</div>
