@@ -4,12 +4,12 @@
 <html lang="en">
 
 <head>
-    {% include "partials/head.html" %}
+    {% include 'partials/head.html' %}
 </head>
 
-<body class="bg-[#030712] text-white font-sans overflow-hidden">
+<body>
 
-<div class="flex h-screen">
+<div class="flex h-screen overflow-hidden">
 
     {% include 'components/navigation/sidebar.html' %}
 
@@ -17,14 +17,16 @@
 
         {% include 'components/navigation/topbar.html' %}
 
-        <div class="p-8">
-            {% block content %}{% endblock %}
+        <div class="p-8 max-w-[1800px] mx-auto">
+
+            {% block content %}
+            {% endblock %}
+
         </div>
 
     </main>
 
 </div>
 
-{% include 'partials/scripts.html' %}
 </body>
 </html>

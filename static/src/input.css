@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#030712] text-white antialiased;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+@layer components {
+
+    .glass-card {
+        @apply bg-[#0f172a]/70 backdrop-blur-2xl border border-white/5 rounded-[28px];
+    }
+
+    .dashboard-card {
+        @apply glass-card shadow-2xl;
+    }
+
+    .sidebar-item {
+        @apply flex items-center px-4 py-3 rounded-2xl text-slate-400 transition-all duration-300 hover:bg-white/5 hover:text-white;
+    }
+
+    .sidebar-item-active {
+        @apply bg-blue-500/10 text-blue-400 border border-blue-500/20;
+    }
+
+    .camera-card {
+        @apply relative overflow-hidden rounded-[28px] border border-white/5 h-[340px];
+    }
+
+    .camera-overlay {
+        background:
+            linear-gradient(
+                to top,
+                rgba(0,0,0,0.95),
+                rgba(0,0,0,0.2),
+                transparent
+            );
+    }
+
+}

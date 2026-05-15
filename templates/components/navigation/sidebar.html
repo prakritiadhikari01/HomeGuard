@@ -1,26 +1,73 @@
-<aside class="w-[260px] bg-[#060b16] border-r border-white/5 flex flex-col justify-between">
+<aside class="w-[280px] flex-shrink-0 bg-[#060b16] border-r border-white/5 flex flex-col justify-between">
 
     <div>
 
-        <div class="p-6 border-b border-white/5">
-            <h1 class="text-2xl font-bold">HOMEGUARD</h1>
-            <p class="text-sm text-slate-400 mt-1">v2.4 • Secure</p>
+        <div class="px-8 py-8 border-b border-white/5">
+
+            <h1 class="text-3xl font-bold tracking-tight">
+                HOMEGUARD
+            </h1>
+
+            <p class="text-slate-500 mt-2">
+                AI Security Platform
+            </p>
+
         </div>
 
         <nav class="p-4 space-y-2">
 
-            {% include 'components/navigation/sidebar_item.html' with title='Dashboard' active=True %}
-            {% include 'components/navigation/sidebar_item.html' with title='Live Surveillance' %}
-            {% include 'components/navigation/sidebar_item.html' with title='Activity Timeline' %}
-            {% include 'components/navigation/sidebar_item.html' with title='Members' %}
-            {% include 'components/navigation/sidebar_item.html' with title='Settings' %}
+            <a class="sidebar-item sidebar-item-active">
+                Dashboard
+            </a>
+
+            <a class="sidebar-item">
+                Surveillance
+            </a>
+
+            <a class="sidebar-item">
+                Timeline
+            </a>
+
+            <a class="sidebar-item">
+                Members
+            </a>
+
+            <a class="sidebar-item">
+                Analytics
+            </a>
+
+            <a class="sidebar-item">
+                Settings
+            </a>
 
         </nav>
 
     </div>
 
-    <div class="p-4">
-        {% include 'components/widgets/system_status.html' %}
+    <div class="p-5">
+
+        <div class="dashboard-card p-5">
+
+            <p class="text-slate-500 uppercase tracking-[0.2em] text-xs">
+                System Status
+            </p>
+
+            <div class="flex items-center gap-3 mt-5">
+
+                <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
+
+                <h3 class="text-2xl font-semibold text-green-400">
+                    Armed
+                </h3>
+
+            </div>
+
+            <p class="text-slate-400 mt-3 text-sm">
+                All systems operational
+            </p>
+
+        </div>
+
     </div>
 
 </aside>
